@@ -34,4 +34,13 @@ gridSizeSelector.addEventListener("change", event => {
     fillGrid(event.target.value, event.target.value);
 });
 
+document.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
+    checkbox.addEventListener("click", (event) => {
+        if (!event.target.checked) {
+            event.preventDefault();
+            return false;
+        }
+    });
+});
+
 fillGrid(gridSizeSelector.value, gridSizeSelector.value);

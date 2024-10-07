@@ -1,5 +1,6 @@
 const gridContainer = document.querySelector("#grid-container");
 const colorPicker = document.querySelector(".color-picker");
+const gridSizeDisplay = document.querySelector(".grid-size-display");
 const gridSizeSelector = document.querySelector(".grid-size-selector");
 
 function colorGridElement (element) {

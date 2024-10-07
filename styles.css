@@ -22,6 +22,10 @@ h1 {
     justify-content: center;
 }
 
+#sidebar {
+    margin-top: 10rem;
+}
+
 #grid-container {
     width: 500px;
     height: 500px;

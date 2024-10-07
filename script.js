@@ -4,6 +4,7 @@ const gridSizeDisplay = document.querySelector(".grid-size-display");
 const gridSizeSelector = document.querySelector(".grid-size-selector");
 const colorModeBox = document.querySelector("#color-mode");
 const rainbowModeBox = document.querySelector("#rainbow-mode");
+const eraserBox = document.querySelector("#eraser");
 
 function getRandomRGB() {
     return Math.floor(Math.random() * 255);
@@ -15,6 +16,9 @@ function colorGridElement (element) {
 
     } else if (rainbowModeBox.checked) {
         element.style.backgroundColor = `rgb(${getRandomRGB()}, ${getRandomRGB()}, ${getRandomRGB()})`;
+
+    } else if (eraserBox.checked) {
+        element.style.backgroundColor = "#FFFFFF";
     }
 }
 

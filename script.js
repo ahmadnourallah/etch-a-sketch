@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector("#grid-container");
+const colorPicker = document.querySelector(".color-picker");
 
 function fillGrid(x, y) {
 

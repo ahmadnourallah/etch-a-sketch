@@ -2,9 +2,12 @@ const gridContainer = document.querySelector("#grid-container");
 const colorPicker = document.querySelector(".color-picker");
 const gridSizeDisplay = document.querySelector(".grid-size-display");
 const gridSizeSelector = document.querySelector(".grid-size-selector");
+const colorModeBox = document.querySelector("#color-mode");
 
 function colorGridElement (element) {
-    element.style.backgroundColor = colorPicker.value;
+    if (colorModeBox.checked) {
+        element.style.backgroundColor = colorPicker.value;
+    }
 }
 
 function fillGrid(x, y) {

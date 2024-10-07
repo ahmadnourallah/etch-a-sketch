@@ -1,5 +1,6 @@
 const gridContainer = document.querySelector("#grid-container");
 const colorPicker = document.querySelector(".color-picker");
+const gridSizeSelector = document.querySelector(".grid-size-selector");
 
 function colorGridElement (element) {
     element.style.backgroundColor = colorPicker.value;

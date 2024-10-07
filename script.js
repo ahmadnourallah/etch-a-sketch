@@ -5,6 +5,7 @@ const gridSizeSelector = document.querySelector(".grid-size-selector");
 const colorModeBox = document.querySelector("#color-mode");
 const rainbowModeBox = document.querySelector("#rainbow-mode");
 const eraserBox = document.querySelector("#eraser");
+const clearBtn = document.querySelector("#clear-btn");
 
 function getRandomRGB() {
     return Math.floor(Math.random() * 255);
@@ -26,6 +27,7 @@ function fillGrid(x, y) {
 
     for (let i = 1; i <= x * y; i++) {
         let gridElement = document.createElement("div");
+        gridElement.classList.add("grid-element");
         gridElement.style.width = `calc(100% / ${x})`;
 
         gridElement.addEventListener("click", event => colorGridElement(event.target));
@@ -62,6 +64,12 @@ document.querySelector("#sidebar").addEventListener("click", event => {
             }
         });
     }
+});
+
+clearBtn.addEventListener("click", () => {
+    document.querySelectorAll(".grid-element").forEach(gridElement => {
+        gridElement.style.backgroundColor = "#FFFFFF";
+    });
 });
 
 fillGrid(gridSizeSelector.value, gridSizeSelector.value);

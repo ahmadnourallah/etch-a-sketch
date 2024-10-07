@@ -34,7 +34,7 @@ input[type=checkbox] {
     display: none; 
 }
 
-input[type=checkbox] + label {
+input[type=checkbox] + label, #clear-btn {
     display: inline-block;
     border-radius: 3px;
     border: 1px solid #333333;
@@ -44,7 +44,7 @@ input[type=checkbox] + label {
     text-align: center;
     cursor: pointer;
     transition: .3s;
-
+    font-size: inherit;
 }
 
 input[type=checkbox]:checked + label {
@@ -52,7 +52,7 @@ input[type=checkbox]:checked + label {
     color: #FFFFFF;
 }  
 
-input[type=checkbox]:hover + label {
+input[type=checkbox]:hover + label, #clear-btn:hover {
     transform: scale(1.05);
 }
 

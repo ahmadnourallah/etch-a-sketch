@@ -31,7 +31,7 @@ h1 {
 }
 
 /*********** Baseline, reset styles ***********/
-input[type="range"] {
+.grid-size-selector {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
@@ -40,13 +40,13 @@ input[type="range"] {
   }
   
   /* Removes default focus */
-  input[type="range"]:focus {
+  .grid-size-selector:focus {
     outline: none;
   }
   
   /******** Chrome, Safari, Opera and Edge Chromium styles ********/
   /* slider track */
-  input[type="range"]::-webkit-slider-runnable-track {
+  .grid-size-selector::-webkit-slider-runnable-track {
     background-color: #ffffff;
     border-radius: 0.5rem;
     border: 1px solid #000000;
@@ -54,7 +54,7 @@ input[type="range"] {
   }
   
   /* slider thumb */
-  input[type="range"]::-webkit-slider-thumb {
+  .grid-size-selector::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     margin-top: -9.6px; /* Centers thumb on the track */
@@ -64,14 +64,14 @@ input[type="range"] {
     width: 1.7rem;
   }
   
-  input[type="range"]:focus::-webkit-slider-thumb {
+  .grid-size-selector:focus::-webkit-slider-thumb {
     outline: 3px solid #333333;
     outline-offset: 0.125rem;
   }
   
   /*********** Firefox styles ***********/
   /* slider track */
-  input[type="range"]::-moz-range-track {
+  .grid-size-selector::-moz-range-track {
     background-color: #ffffff;
     border-radius: 0.5rem;
     border: 1px solid #000000;
@@ -79,7 +79,7 @@ input[type="range"] {
   }
   
   /* slider thumb */
-  input[type="range"]::-moz-range-thumb {
+  .grid-size-selector::-moz-range-thumb {
     background-color: #333333;
     border: none; /*Removes extra border that FF applies*/
     border-radius: 1.5rem;
@@ -87,7 +87,7 @@ input[type="range"] {
     width: 1.7rem;
   }
   
-  input[type="range"]:focus::-moz-range-thumb{
+  .grid-size-selector:focus::-moz-range-thumb{
     outline: 3px solid #333333;
     outline-offset: 0.125rem;
   }  

@@ -33,3 +33,5 @@ gridSizeSelector.addEventListener("change", event => {
     gridContainer.replaceChildren();
     fillGrid(event.target.value, event.target.value);
 });
+
+fillGrid(gridSizeSelector.value, gridSizeSelector.value);

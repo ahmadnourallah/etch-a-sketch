@@ -37,13 +37,19 @@ gridSizeSelector.addEventListener("change", event => {
     fillGrid(event.target.value, event.target.value);
 });
 
-document.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
-    checkbox.addEventListener("click", (event) => {
+document.querySelector("#sidebar").addEventListener("click", event => {
+    if (event.target.type === "checkbox") {
         if (!event.target.checked) {
             event.preventDefault();
             return false;
         }
-    });
+        
+        document.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
+            if (event.target !== checkbox) {
+                checkbox.checked = false;
+            }
+        });
+    }
 });
 
 fillGrid(gridSizeSelector.value, gridSizeSelector.value);

@@ -6,6 +6,9 @@ body {
     margin: 0;
     background-color: #EDEDED;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 }
 
 h1 {
@@ -15,8 +18,8 @@ h1 {
 
 #wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
 }
 
 #grid-container {

@@ -5,4 +5,10 @@
 body {
     margin: 0;
     background-color: #EDEDED;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
 }

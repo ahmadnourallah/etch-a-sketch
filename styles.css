@@ -30,6 +30,11 @@ h1 {
     gap: 2rem;
 }
 
+.grid-size-display {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
 /*********** Baseline, reset styles ***********/
 .grid-size-selector {
     -webkit-appearance: none;

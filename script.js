@@ -24,3 +24,7 @@ function fillGrid(x, y) {
         gridContainer.append(gridElement);
     }
 }
+
+gridSizeSelector.addEventListener("input", event => {
+    gridSizeDisplay.textContent = `${event.target.value} x ${event.target.value}`;
+})

@@ -30,5 +30,6 @@ gridSizeSelector.addEventListener("input", event => {
 });
 
 gridSizeSelector.addEventListener("change", event => {
+    gridContainer.replaceChildren();
     fillGrid(event.target.value, event.target.value);
-})
+});

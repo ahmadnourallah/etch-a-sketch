@@ -11,6 +11,19 @@ body {
     gap: 10rem;
 }
 
+@media (max-width: 1030px) {
+  body {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;

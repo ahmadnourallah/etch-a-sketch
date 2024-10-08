@@ -28,7 +28,7 @@ function fillGrid(x, y) {
     for (let i = 1; i <= x * y; i++) {
         let gridElement = document.createElement("div");
         gridElement.classList.add("grid-element");
-        gridElement.style.width = `calc(100% / ${x})`;
+        gridElement.style.width = `${100 / x}%`;
 
         gridElement.addEventListener("click", event => colorGridElement(event.target));
 

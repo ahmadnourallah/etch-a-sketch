@@ -4,6 +4,7 @@ const gridSizeDisplay = document.querySelector(".grid-size-display");
 const gridSizeSelector = document.querySelector(".grid-size-selector");
 const colorModeBox = document.querySelector("#color-mode");
 const rainbowModeBox = document.querySelector("#rainbow-mode");
+const shadingModeBox = document.querySelector("#shading-mode");
 const eraserBox = document.querySelector("#eraser");
 const clearBtn = document.querySelector("#clear-btn");
 
@@ -17,6 +18,10 @@ function colorGridElement (element) {
 
     } else if (rainbowModeBox.checked) {
         element.style.backgroundColor = `rgb(${getRandomRGB()}, ${getRandomRGB()}, ${getRandomRGB()})`;
+
+    } else if (shadingModeBox.checked) {
+        element.style.backgroundColor = colorPicker.value;
+        element.style.opacity = Number(element.style.opacity) + 0.1;
 
     } else if (eraserBox.checked) {
         element.style.backgroundColor = "#FFFFFF";
